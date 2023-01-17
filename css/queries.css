@@ -1,0 +1,469 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+  .header {
+    padding: 0 6.4rem;
+  }
+  .hero {
+    max-width: 120rem;
+    align-items: center;
+  }
+  .section-hero {
+    overflow: hidden;
+  }
+  .hero-text-box {
+    padding: 0;
+  }
+  .hero-img {
+    height: 55rem;
+  }
+  .card-article {
+    padding: 3.2rem;
+  }
+  .section-marketing > .container {
+    height: 46rem;
+  }
+  .marketing-text-box {
+    padding: 4.4rem;
+  }
+  .marketing-text-box .heading-secondary {
+    font-size: 4.2rem;
+  }
+  .section-testimonials .container {
+    max-width: 120rem;
+  }
+  .testimonials {
+    padding: 9.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    max-width: 120rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .section-feature {
+    padding: 6.4rem 3.2rem;
+  }
+  .section-feature .grid {
+    gap: 6.4rem;
+  }
+  .feature-content .card-article {
+    padding: 2rem 3.2rem;
+  }
+  .marketing-article i {
+    font-size: 1rem;
+  }
+  .marketing-article-content .description {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-img {
+    height: 48rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--6-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-marketing > .container {
+    height: 40rem;
+  }
+  .marketing-text-box .heading-secondary {
+    font-size: 3.2rem;
+  }
+  .marketing-text-box .subheading {
+    font-size: 1.8rem;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .active-videos-box {
+    display: grid;
+    grid-template-areas:
+      "video1"
+      "videocontent"
+      "video2"
+      "slides";
+    gap: 2rem;
+  }
+
+  .active-video-content {
+    padding: 2.4rem 0;
+}
+
+  .active-slide-video img,
+  .active-video img {
+    width: 100%;
+  }
+
+  .slide-btns {
+    display: none;
+  }
+
+  .section-testimonials .container {
+    max-width: 90%;
+  }
+
+  .testimonials {
+    padding: 6.4rem 4.8rem;
+  }
+
+  .testimonial {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .testimonial-text {
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* MOBILE NAVIGATION */
+  .header {
+    padding: 0 4.8rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: flex-start;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .flex-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .active-card {
+    padding: 3.2rem 4.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo {
+    height: 4rem;
+  }
+  .hero-img {
+    height: 40rem;
+    transform: translateX(50%);
+  }
+
+  .hero-text-box,
+  .hero-form {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  
+
+  .main-nav-link.nav-start:link,
+  .main-nav-link.nav-start:visited {
+    font-size: 2rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .marketing {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 80%;
+  }
+
+  .marketing .marketing-img-box {
+    display: none;
+  }
+
+  .marketing .marketing-text-box {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .marketing .marketing-text-box .grid {
+    gap: 1.2rem;
+  }
+
+  .marketing-article {
+    text-align: left;
+  }
+  .active-card {
+    padding: 3.2rem 8rem;
+  }
+  .active-video-content .heading-secondary {
+    font-size: 3rem;
+  }
+  .grid-footer {
+    grid-template-areas:
+      "nav-1  nav-2"
+      "logo address";
+  }
+  .copyrights {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .how-text-box {
+    margin-bottom: 3.2rem;
+  }
+  .flex-how {
+    text-align: center;
+    flex-direction: column;
+}
+.how-cards-box {
+    gap: 4.8rem;
+}
+.card-article {
+    text-align: center;
+}
+.card-icon {
+    margin: 0 auto 2.2rem auto;
+}
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid--6-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero {
+    display: block;
+  }
+  .hero-img {
+    height: 30rem;
+  }
+   .section-marketing .container {
+    height:max-content;
+    width: 90%;
+   }
+
+   .marketing .marketing-text-box {
+    padding: 2rem 1.2rem;
+}
+
+.section-feature {
+    padding: 4.8rem 1.2rem;
+}
+.feature-heading {
+    width: 100%;
+    margin: 0 auto;
+}
+.feature-content .card-article {
+    padding: 2rem 3.2rem;
+    text-align: left;
+}
+.active-cards {
+    gap: 3rem;
+}
+
+.active-card {
+    width: 90%;
+}
+.active-slide-video img, .active-video img {
+  height: 20rem;
+}
+.platform-heading {
+  width: 100%;
+}
+
+.download-content {
+  width: 100%;
+}
+
+}
+/**************************/
+/* BELOW 360px (Smaller Phones) */
+/**************************/
+
+@media (max-width: 23em) {
+  
+  .hero-img {
+    height: 20rem;
+    transform: translateX(60%);
+  }
+.app-platforms {
+  flex-direction: column;
+  align-items: start;
+}
+  .grid--6-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-footer a {
+    display: inline-block;
+  }
+  .address-col {
+    width: 100%;
+    justify-self: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .contacts {
+    align-items: center;
+  }
+  .grid-footer {
+    grid-template-areas:
+    "logo"
+      "nav-1"
+      "nav-2"
+      "address";
+      justify-content: center;
+      text-align: center;
+    }
+  .contacts .footer-link, .address {
+    align-items: flex-start;
+  }
+  .download-links {
+    flex-direction: column;
+  }
+  .copyright {
+    font-size: 1.4rem;
+  }
+}
+
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
